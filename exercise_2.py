@@ -1,5 +1,7 @@
 class Edits:
-    def editCount(self, str1, str2, x, y):
+    def editCount(self, str1, str2):
+        x = len(str1)
+        y = len(str2)
         if x == 0:
             return y
     
@@ -7,16 +9,13 @@ class Edits:
             return x
     
         if str1[x-1] == str2[y-1]:
-            return Edits.editCount(str1, str2, x-1, y-1)
+            return self.editCount(str1, str2, x-1, y-1)
     
-        return 1 + min(Edits.editCount(str1, str2, x, y-1),
-                   Edits.editCount(str1, str2, x-1, y),
-                   Edits.editCount(str1, str2, x-1, y-1)
-                   )
+        return 1 + min(self.editCount(str1, str2, x, y-1), self.editCount(str1, str2, x-1, y), self.editCount(str1, str2, x-1, y-1))
 
 str1 = "sunday"
 str2 = "saturday"
 
 if __name__ == '__main__':
-  func1 = Edits()
-  print(func1.editCount(str1, str2, len(str1), len(str2)))
+    func1 = Edits()
+    print(func1.editCount(str1, str2))
