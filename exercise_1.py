@@ -16,5 +16,5 @@ class Counts:
 str1 = "P@#yn26at^&i5ve"
 
 if __name__ == '__main__':
-  func1 = Counts()
-  print(func1.stringCount(str1))
+    func1 = Counts()
+    print(func1.stringCount(str1))
