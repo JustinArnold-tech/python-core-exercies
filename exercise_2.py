@@ -1,5 +1,5 @@
 class Edits:
-    def editCount(str1, str2, x, y):
+    def editCount(self, str1, str2, x, y):
         if x == 0:
             return y
     
@@ -19,4 +19,4 @@ str2 = "saturday"
 
 if __name__ == '__main__':
   func1 = Edits()
-  print(func1.editCount(str1,str2,len(str1)))
+  print(func1.editCount(str1, str2, len(str1), len(str2)))
