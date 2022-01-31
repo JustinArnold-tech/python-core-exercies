@@ -12,10 +12,8 @@ class Counts:
             else:
                 special = special + 1
         return alphabets, digits, special
+        
 str1 = "P@#yn26at^&i5ve"
-# print("Chars:  ", alphabets)
-# print("Digits:  ", digits)
-# print("Symbol:  ", special)
 
 if __name__ == '__main__':
   func1 = Counts()
