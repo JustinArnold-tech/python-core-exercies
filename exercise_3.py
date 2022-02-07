@@ -1,9 +1,9 @@
 class Anagrams:
     def is_anagram(self,w1, w2):
         if(sorted(w1) == sorted(w2)):
-            return f"{w1} and {w2} are anagrams"
+            return True
         else:
-            return f"'{w1}' and '{w2}' are not anagrams"
+            return False
 
 w1 = 'arc'
 w2 = 'car'
