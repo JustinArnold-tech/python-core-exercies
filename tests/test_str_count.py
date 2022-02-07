@@ -16,7 +16,7 @@ class AnagramTest(unittest.TestCase):
         cls.anagram = Anagrams()
     
     def test_if_anagram(self):
-        self.assertEqual(self.anagram.is_anagram("arc","car"), ("'arc' and 'car' are anagrams"))
+        self.assertEqual(self.anagram.is_anagram("arc","car"), (True))
 
 if __name__ == '__main__':
     unittest.main()
