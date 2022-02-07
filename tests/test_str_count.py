@@ -30,6 +30,20 @@ class AnagramTest(unittest.TestCase):
         self.assertEqual(self.anagram.is_anagram("sadder","dreads"), True)
         self.assertEqual(self.anagram.is_anagram("save","vase"), True)
         self.assertEqual(self.anagram.is_anagram("state","taste"), True)
+        self.assertEqual(self.anagram.is_anagram("arc","care"), False)
+        self.assertEqual(self.anagram.is_anagram("brag","gra"), False)
+        self.assertEqual(self.anagram.is_anagram("bored","robe"), False)
+        self.assertEqual(self.anagram.is_anagram("cat","ac"), False)
+        self.assertEqual(self.anagram.is_anagram("cider","crie"), False)
+        self.assertEqual(self.anagram.is_anagram("dusty","stud"), False)
+        self.assertEqual(self.anagram.is_anagram("elbow","belo"), False)
+        self.assertEqual(self.anagram.is_anagram("inch","chi"), False)
+        self.assertEqual(self.anagram.is_anagram("night","thin"), False)
+        self.assertEqual(self.anagram.is_anagram("peach","chea"), False)
+        self.assertEqual(self.anagram.is_anagram("players","parsle"), False)
+        self.assertEqual(self.anagram.is_anagram("sadder","dread"), False)
+        self.assertEqual(self.anagram.is_anagram("save","vas"), False)
+        self.assertEqual(self.anagram.is_anagram("state","tast"), False)
         
 
 if __name__ == '__main__':
